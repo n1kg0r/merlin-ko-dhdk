@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Merlin</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+</head>
+<body>
+    <header class="align-items-center">
+        <nav class="px-1 navbar navbar-expand-lg navbar-light bg-light" style="min-height: 10vh; width: 100%; height: 1fr">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">CameLOD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            THE PROJECT
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="index.html#idea">Idea</a></li>
+                          <li><a class="dropdown-item" href="index.html#item">Item</a></li>
+                          <li><a class="dropdown-item" href="index.html#team">Team</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            KNOWLEDGE ORGANIZATION
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="knowledge-organization.html#conceptual-map">Conceptual Map</a></li>
+                            <li><a class="dropdown-item" href="knowledge-organization.html#er-model">E/R Model</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle dropdown-item" href="#" id="navbarDarkDropdownMenuLinkNested" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    Metadata
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" role="menu" aria-labelledby="navbarDarkDropdownMenuLinkNested">
+                                    <li><a class="dropdown-item" href="knowledge-organization.html#metadata-analysis">Metadata Analysis</a></li>
+                                    <li><a class="dropdown-item" href="knowledge-organization.html#metadata-alignment">Metadata Alignment</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="knowledge-organization.html#theoretical-model">Theoretical Model</a></li>
+                            <li><a class="dropdown-item" href="knowledge-organization.html#conceptual-model">Conceptual Model</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            KNOWLEDGE REPRESENTATION
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="knowledge-representation.html#data-description">Data description</a></li>
+                            <li><a class="dropdown-item" href="knowledge-representation.html#uri-definition">URI definition</a></li>
+                            <li><a class="dropdown-item" href="knowledge-representation.html#rdf-production">RDF production</a></li>
+                            <li><a class="dropdown-item" href="knowledge-representation.html#rdf-visualization">RDF visualization</a></li>
+                        </ul>
+                      </li>
+                    
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <main>
+        <section id="knowledge-representation" class="d-flex flex-column justify-content-center align-items-center p-3">
+            <h2>
+                Knowledge Representation
+            </h2>
+        </section>
+
+
+        
+
+        <section class="mx-5 mb-3 border pt-3" id="data-description">
+            <h4>
+                Data description
+            </h4>
+            <p>
+                Based on the properties defined in the Conceptual Model, each item is described through a table, published as a CSV file to enhance the openness of the resource. Each row of the tables represents a statement, while the three components of the triple are expressed in the columns.
+            </p>
+            
+            <div class="container mb-3 px-5 d-flex flex-column justify-content-start align-content-center overflow-scroll">
+                <div class="d-flex justify-content-center">
+                    <div class="btn-group mb-1 py-2" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-print', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Print</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-manuscript', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Manuscript</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-sculpture', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Sculpture</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-prophetia-merlini',['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Prophetia Merlini</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-photography',['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Photography</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-painting', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Painting</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-lyrical-opera', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Lyrical Opera</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-tarot-deck', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Tarot Deck</button>
+                    </div>
+                </div>
+                
+
+                <table id="dd-print" class="table table-bordered table-hover table-condensed">
+                    <thead><tr><th title="Field #1">Subject</th>
+                    <th title="Field #2">Predicate</th>
+                    <th title="Field #3">Object</th>
+                    </tr></thead>
+                    <tbody><tr>
+                    <td>Print</td>
+                    <td>dcterms:title</td>
+                    <td>Merlijn</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>dcterms:alternative</td>
+                    <td>Merlinus</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P32_used_general_technique</td>
+                    <td>letterpress printing</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P45_consist_of</td>
+                    <td>Paper</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P50_has_current_keeper</td>
+                    <td>Rijskmuseum Amsterdam, </td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>P74_has_current_or_former_residence</td>
+                    <td>Rijskmuseum Amsterdam, </td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P108_was_produced_by</td>
+                    <td>Michel Wolgemut</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P108_was_produced_by</td>
+                    <td> Wilhelm Pleydenwurff </td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>schema:locationCreated</td>
+                    <td>Neurenberg</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>schema:dateCreated</td>
+                    <td>1493</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P1_is_identified_by</td>
+                    <td>RP-P-2016-49-82-9</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>schema:copyrightHolder</td>
+                    <td>public domain</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P43_has_dimension</td>
+                    <td>55 mm × 54 mm</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>owl:isPartOf</td>
+                    <td>Album met voorstellingen uit de Neurenbergkroniek van Schedel (RP-P-2016-49)</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:P62_depicts</td>
+                    <td>Merlin</td>
+                    </tr>
+                    <tr>
+                    <td>Print</td>
+                    <td>crm:E55_Type</td>
+                    <td>print</td>
+                    </tr>
+                    </tbody></table>
+
+
+
+                    <table id="dd-manuscript" class="d-none table table-bordered table-hover table-condensed">
+                        <thead><tr><th title="Field #1">Subject</th>
+                        <th title="Field #2">Predicate</th>
+                        <th title="Field #3">Object</th>
+                        </tr></thead>
+                        <tbody><tr>
+                        <td>Manuscript</td>
+                        <td>crm:P108_was_produced_by</td>
+                        <td>Anonymous</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>schema:dateCreated</td>
+                        <td>XIII century</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>dc:language</td>
+                        <td>French/Italian</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>crm:P50_has_current_keeper</td>
+                        <td>Archivi di stato di Bologna</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>dcterms:title</td>
+                        <td>Prophecie de Merlin</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>crm:P45_consist_of</td>
+                        <td>Paper</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>crm:P2_has_type</td>
+                        <td>Manuscript</td>
+                        </tr>
+                        <tr>
+                        <td>Manuscript</td>
+                        <td>schema:locationCreated</td>
+                        <td>France</td>
+                        </tr>
+                        </tbody></table>
+
+
+
+                        <table id="dd-sculpture" class="d-none table table-bordered table-hover table-condensed">
+                            <thead><tr><th title="Field #1">Subject</th>
+                            <th title="Field #2">Predicate</th>
+                            <th title="Field #3">Object</th>
+                            </tr></thead>
+                            <tbody><tr>
+                            <td>Sculpture</td>
+                            <td>crm:P50_has_current_keeper</td>
+                            <td>National museum Wales</td>
+                            </tr>
+                            <tr>
+                            <td>Sculpture</td>
+                            <td>crm:P32_used_general_technique</td>
+                            <td>sculpture</td>
+                            </tr>
+                            <tr>
+                            <td>Sculpture</td>
+                            <td>crm:P45_consist_of</td>
+                            <td>bronze</td>
+                            </tr>
+                            <tr>
+                            <td>Sculpture</td>
+                            <td>schema:dateCreated</td>
+                            <td>XIX</td>
+                            </tr>
+                            <tr>
+                            <td>Sculpture</td>
+                            <td>crm:P108_was_produced_by</td>
+                            <td>JOHN, Sir William Goscombe </td>
+                            </tr>
+                            <tr>
+                            <td>Sculpture</td>
+                            <td>crm:P2_has_type</td>
+                            <td>Statue</td>
+                            </tr>
+                            <tr>
+                            <td>Sculpture</td>
+                            <td>crm:P62_depicts</td>
+                            <td>Merlin and Arthur</td>
+                            </tr>
+                            </tbody></table>
+
+
+
+                            <table id="dd-prophetia-merlini" class="d-none table table-bordered table-hover table-condensed">
+                                <thead><tr><th title="Field #1">Subject</th>
+                                <th title="Field #2">Predicate</th>
+                                <th title="Field #3">Object</th>
+                                </tr></thead>
+                                <tbody><tr>
+                                <td>Book</td>
+                                <td>dcterms:title</td>
+                                <td>Prophetia Merlini</td>
+                                </tr>
+                                <tr>
+                                <td>Book</td>
+                                <td>crm:P108_was_produced_by</td>
+                                <td>Geoffrey of Monmouth</td>
+                                </tr>
+                                <tr>
+                                <td>Book</td>
+                                <td>crm:P108_was_produced_by</td>
+                                <td>Caroline Eckhardt</td>
+                                </tr>
+                                <tr>
+                                <td>Book</td>
+                                <td>schema:dateCreated</td>
+                                <td>XII century</td>
+                                </tr>
+                                <tr>
+                                <td>Book</td>
+                                <td>dc:language</td>
+                                <td>Middle English/English</td>
+                                </tr>
+                                <tr>
+                                <td>Book</td>
+                                <td>crm:P50_has_current_keeper</td>
+                                <td>British library</td>
+                                </tr>
+                                <tr>
+                                <td> </td>
+                                <td>crm:P45_consist_of</td>
+                                <td>Paper</td>
+                                </tr>
+                                </tbody></table>
+
+
+                                <table id="dd-photography" class="d-none table table-bordered table-hover table-condensed">
+                                    <thead><tr><th title="Field #1">Subject</th>
+                                    <th title="Field #2">Predicate</th>
+                                    <th title="Field #3">Object</th>
+                                    </tr></thead>
+                                    <tbody><tr>
+                                    <td>Photography</td>
+                                    <td>crm:P102_has_dcterms:title</td>
+                                    <td>Vivian and Merlin</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P62_depicts</td>
+                                    <td>Merlin</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P62_depicts</td>
+                                    <td>Vivian</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>has crm:E55_Type</td>
+                                    <td>Photography</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P4_has_time-span</td>
+                                    <td>1870s</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P50_has_current_keeper</td>
+                                    <td>Library of Congress</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>P74_has_current_or_former_residence</td>
+                                    <td>Library of Congress</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P43_has_dimension</td>
+                                    <td>315 x 280 mm</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P32_used_general_technique</td>
+                                    <td>albumen print</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>schema:copyrightHolder</td>
+                                    <td>public domain</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P108_was_produced_by</td>
+                                    <td>Cameron, Julia Margaret</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Photography</td>
+                                    <td>crm:P1_is_identified_by</td>
+                                    <td>92521897</td>
+                                    </tr>
+                                    </tbody></table>
+
+
+                                    <table id="dd-painting" class="d-none table table-bordered table-hover table-condensed">
+                                        <thead><tr><th title="Field #1">Subject</th>
+                                        <th title="Field #2">Predicate</th>
+                                        <th title="Field #3">Object</th>
+                                        </tr></thead>
+                                        <tbody><tr>
+                                        <td>Painting</td>
+                                        <td>crm:P102_has_title</td>
+                                        <td>&quot;The Beguiling of Merlin&quot;</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:P62_depicts</td>
+                                        <td>Merlin, Vivian</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>dc:creator</td>
+                                        <td>Sir Edward Coley Burne-Jones</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:E55_Type<br/></td>
+                                        <td>Painting</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:E57_Material</td>
+                                        <td>Canvas</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:P32_general_technique</td>
+                                        <td>Oil on canvas</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:E16_Measurement</td>
+                                        <td>186 cm x 111 cm</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:P50_has_current_keeper</td>
+                                        <td>Lady Lever Art Gallery, National Museums and Galleries on Merseyside, Liverpool</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>dc:created</td>
+                                        <td>1870 - 1874</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>E30 Right<br/></td>
+                                        <td>Public domain</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Painting</td>
+                                        <td>crm:P1_is_identified_by</td>
+                                        <td>LL3121	</td>
+                                        </tr>
+                                        </tbody></table>
+
+
+                                        <table id="dd-lyrical-opera" class="d-none table table-bordered table-hover table-condensed">
+                                            <thead><tr><th title="Field #1">Subject</th>
+                                            <th title="Field #2">Predicate</th>
+                                            <th title="Field #3">Object</th>
+                                            </tr></thead>
+                                            <tbody><tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>crm:P102_has_title</td>
+                                            <td>Vivian and Merlin</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>crm:E55_Type</td>
+                                            <td>Lyrical Opera</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>::genre</td>
+                                            <td>Romantic</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>dcterms:publisher</td>
+                                            <td>Schirmer</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>crm:P72_has_language</td>
+                                            <td>English</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>E30 Right</td>
+                                            <td>Public Domain</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>dc:format</td>
+                                            <td>Sheet music</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>dc:created</td>
+                                            <td>1907</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>dc:creator</td>
+                                            <td>Hadley, Henry Kimball, Ethel Watts Mumford</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lyrical Opera</td>
+                                            <td>dc:subject:subj</td>
+                                            <td>Vivian, merlin</td>
+                                            </tr>
+                                            </tbody></table>
+
+
+                                            <table id="dd-tarot-deck" class="d-none table table-bordered table-hover table-condensed">
+                                                <thead><tr><th title="Field #1">Subject</th>
+                                                <th title="Field #2">Predicate</th>
+                                                <th title="Field #3">Object</th>
+                                                </tr></thead>
+                                                <tbody><tr>
+                                                <td>Tarot Deck</td>
+                                                <td> </td>
+                                                <td>17 x 12 x 7 cm</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tarot Deck</td>
+                                                <td>crm:P102_has_title</td>
+                                                <td>&quot;The Merlin  Tarot&quot;</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tarot Deck</td>
+                                                <td>crm:E55_Type</td>
+                                                <td>Tarot Deck</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tarot Deck</td>
+                                                <td>E57 Material</td>
+                                                <td>cardboard</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tarot Deck</td>
+                                                <td>dcterms:publisher</td>
+                                                <td>Aquarian Press</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tarot Deck</td>
+                                                <td>crm:P72_has_language</td>
+                                                <td>English</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Tarot Deck</td>
+                                                <td>E30 Right</td>
+                                                <td>Aquarian Press</td>
+                                                </tr>
+                                                <tr>
+                                                <td> </td>
+                                                <td>dc:format</td>
+                                                <td>Deck of cards</td>
+                                                </tr>
+                                                <tr>
+                                                <td> </td>
+                                                <td>dc:created</td>
+                                                <td>1992</td>
+                                                </tr>
+                                                <tr>
+                                                <td> </td>
+                                                <td>dc:creator</td>
+                                                <td>R.J. Stewart, Miranda Grey</td>
+                                                </tr>
+                                                <tr>
+                                                <td> </td>
+                                                <td>dc:subject:subj</td>
+                                                <td>Merlin</td>
+                                                </tr>
+                                                </tbody></table>
+                                        
+            </div>
+        </section>
+
+        <section id="uri-definition" class="mx-5 mb-3 border pt-3">
+            <h3>
+                Resource Identification
+            </h3>
+            <p>
+                Before writing the Turtle serialisation, each entity needs to be identified through a unique URI taken from the domain of the project. In the code beneath, this identifier is shortened through the declaration @base allowed by Turtle syntax.
+                <br/><br/>
+                As a sample of our domain the following URIs where produced
+                <h4>Items</h4>
+                <ul>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/Merljin">Merlijn</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/VivianAndMerlin">Vivian and Merlin</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/MerlinAndArthur">Merlin And Arthur</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/ProphecieDeMerlin">Prophecie de Merlin</a>
+                    </li>
+                </ul>
+
+                <h4>Places</h4>
+                <ul>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/Nuremberg">Nuremberg</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/Kolkata">Kolkata</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/Rijksmuseum">Rijksmuseum</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/LibofCon">Library of Congress</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/London">London</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/Cardiff">Cardiff</a>
+                    </li>
+                </ul>
+
+                <h4>Intitutions</h4>
+                <ul>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/Rijksmuseum">Rijksmuseum</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/place/LibofCon">Library of Congress</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/Nuremberg">Archivio di Stato di Bologna</a>
+                    </li>
+                </ul>
+
+                <h4>People</h4>
+                <ul>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/WolgemutMichael">Michel Wolgemut</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/PleydenwurffWilhelm">Wilhelm Pleydenwurff</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/CameronJuliaMargaret">Cameron, Julia Margaret</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/Merlin">Merlin</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/character/Vivian">Vivian</a>
+                    </li>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/item/WolgemutMichael">Sir John William Goscombe</a>
+                    </li>
+                </ul>
+
+                <h4>Related</h4>
+                <ul>
+                    <li>
+                        <a href="https://camelod.github.io/merlin/related/Album">Album met...</a>
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="rdf-production" class="mx-5 mb-3 border pt-3">
+            <h3>
+                RDF production
+            </h3>
+            <p>
+                The statements visualised in the conceptual model and the data listed in the Data Description are then translated into a RDF Turtle serialisation. To do so we used the URI presented in the previous step, while the properties are translated according to the chosen ontologies. Moreover, in order to provide a major interoperability of our data with external one, the entities having an authority are associated with it through the OWL property owl:sameAs. The authorities are provided by Wikidata DBpedia and VIAF for people, institutions and fictional characters and Geonames for places.
+                <br/><br/>
+                The serialisation has been verified thanks to IDL Lab Turtle validator.
+            </p>
+            <div  class="container  mb-3 px-5">
+                <script src="https://gist.github.com/n1kg0r/51376c0017481e5bb9d9bedc54260550.js"></script>
+            </div>
+        </section>
+
+        <section id="rdf-visualization" class="mx-5 mb-3 border pt-3">
+            <h3>
+                RDF visualization
+            </h3>
+            <p>
+                After the serialization, the data expressed in Turtle serialisation can be finally visualised as a knowledge graphl. The network of entities and properties is automatically drawn by RDF Grapher.
+            </p>
+            <div id="img-container1" class="container w-75 mb-3 px-5">
+                <img src="assets/enriched-er.png" class="img-fluid"/>
+            </div>
+        </section>
+
+        
+
+        
+        
+
+        
+    </main>
+
+    <footer>
+    </footer>   
+
+    <script>
+
+
+        var options1 = {
+            fillContainer: false,
+            zoomPosition: 'original'
+        };
+        
+        // If the width and height of the image are not known or to adjust the image to the container of it
+        var options2 = {
+            fillContainer: true,
+            offset: {vertical: 0, horizontal: 10},
+        };
+        
+        new ImageZoom(document.getElementById("img-container1"), options1);
+
+
+        function pickTable(idOfTableToEnable, idsOfTablesToDisable) {
+            var el = document.getElementById(idOfTableToEnable)
+            el.classList.remove("d-none");
+            for (tableID of idsOfTablesToDisable) {
+                if (tableID !== idOfTableToEnable) {
+                    document.getElementById(tableID).classList.add('d-none');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

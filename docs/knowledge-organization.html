@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Merlin</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+</head>
+<body>
+    <header class="align-items-center">
+        <nav class="px-1 navbar navbar-expand-lg navbar-light bg-light" style="min-height: 10vh; width: 100%; height: 1fr">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">CameLOD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            THE PROJECT
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="index.html#idea">Idea</a></li>
+                          <li><a class="dropdown-item" href="index.html#item">Item</a></li>
+                          <li><a class="dropdown-item" href="index.html#team">Team</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            KNOWLEDGE ORGANIZATION
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="knowledge-organization.html#conceptual-map">Conceptual Map</a></li>
+                            <li><a class="dropdown-item" href="knowledge-organization.html#er-model">E/R Model</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle dropdown-item" href="#" id="navbarDarkDropdownMenuLinkNested" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    Metadata
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" role="menu" aria-labelledby="navbarDarkDropdownMenuLinkNested">
+                                    <li><a class="dropdown-item" href="knowledge-organization.html#metadata-analysis">Metadata Analysis</a></li>
+                                    <li><a class="dropdown-item" href="knowledge-organization.html#metadata-alignment">Metadata Alignment</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="knowledge-organization.html#theoretical-model">Theoretical Model</a></li>
+                            <li><a class="dropdown-item" href="knowledge-organization.html#conceptual-model">Conceptual Model</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            KNOWLEDGE REPRESENTATION
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="knowledge-representation.html#data-description">Data description</a></li>
+                            <li><a class="dropdown-item" href="knowledge-representation.html#uri-definition">URI definition</a></li>
+                            <li><a class="dropdown-item" href="knowledge-representation.html#rdf-production">RDF production</a></li>
+                            <li><a class="dropdown-item" href="knowledge-representation.html#rdf-visualization">RDF visualization</a></li>
+                        </ul>
+                      </li>
+                    
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <main>
+        <section id="knowledge-organization" class="d-flex flex-column justify-content-center align-items-center p-3">
+            <h2>
+                Knowledge Organization
+            </h2>
+        </section>
+
+
+        <section id="conceptual-map" class="mx-5 mb-3 border pt-3">
+            <h3>
+                Conceptual Map
+            </h3>
+            <p>
+                The Conceptual Map represents the first step in the knowledge organization of the domain. It shows the real data related to the items and the domain in a graphical display using natural language labels to describe the entities and the relationships among them.
+            </p>
+            <div id="img-container1" class="container w-75 mb-3 px-5">
+                <img src="assets/conceptual-map.png" class="img-fluid"/>
+            </div>
+            
+        </section>
+
+        <section id="er-model" class="mx-5 mb-3 border pt-3">
+            <h3>
+                E/R Model
+            </h3>
+            <p>
+                The Entity-Relationship Model represents a translation of the Conceptual Map to a higher level of abstract formalism; it focuses on the entities, relationships and their attributes. This abstraction was obtained by expressing the data with more general concepts.
+            </p>
+            <div id="img-container2" class="container w-75 mb-3 px-5">
+                <img src="assets/conceptual-map.png" class="img-fluid"/>
+            </div>
+        </section>
+
+        <section class="mx-5 mb-3 border pt-3">
+            <h3>
+                Metadata
+            </h3>
+            <h4>
+                Metadata analysis
+            </h4>
+            <p>
+                In this first step of reflection on metadata, the metadata used by the single institutions storing the items were analysed to identify which were the metadata standards adopted by each of them. The results of this survey are reported in the following table. The standards provided by the institutions are marked by the symbol *.
+            </p>
+            <div class="container w-75 mb-3 px-5 container d-flex justify-content-center align-content-center">
+                <table class="table table-bordered table-hover table-condensed overflow-scroll">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">Item</th>
+                            <th title="Field #2">Object</th>
+                            <th title="Field #3">Institution</th>
+                            <th title="Field #4">Metadata Standard</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Prophetia Merlini</td>
+                            <td>Manuscript</td>
+                            <td>Medieval Academy of Amer</td>
+                            <td>TEI/XML</td>
+                        </tr>
+                        <tr>
+                            <td>Prophecie de Merlin </td>
+                            <td>Manuscript</td>
+                            <td>Archivi di Stato di Bologna</td>
+                            <td>TEI/XML</td>
+                        </tr>
+                        <tr>
+                            <td>Cat&#39;s in the Cradle</td>
+                            <td>Soundtrack</td>
+                            <td>musicbrainz.org</td>
+                            <td>MMD</td>
+                        </tr>
+                        <tr>
+                            <td>Shrek the Third</td>
+                            <td>Animated movie</td>
+                            <td>IMDb</td>
+                            <td>schema.org</td>
+                        </tr>
+                        <tr>
+                            <td>Merlijn</td>
+                            <td>Print</td>
+                            <td>Rijksmuseum</td>
+                            <td>DC, LIDO, EDM *</td>
+                        </tr>
+                        <tr>
+                            <td>Vivian and Merlin</td>
+                            <td>Photograph</td>
+                            <td>Library of Congress</td>
+                            <td>MODS *</td>
+                        </tr>
+                        <tr>
+                            <td>Merlin and Arthur</td>
+                            <td>Statue</td>
+                            <td>National museum Wales</td>
+                            <td>CIDOC CRM</td>
+                        </tr>
+                        <tr>
+                            <td>Merlin and Vivian</td>
+                            <td>Lyric Drama</td>
+                            <td>IMLSP - Petrucci Music Library</td>
+                            <td>DC</td>
+                        </tr>
+                        <tr>
+                            <td>The Beguiling of Merlin</td>
+                            <td>Painting</td>
+                            <td>Lady Lever Art Gallery, National Museums and Galleries on Merseyside, Liverpool</td>
+                            <td>CIDOC CRM</td>
+                        </tr>
+                        <tr>
+                            <td>The Merlin Tarot</td>
+                            <td>Tarot Deck</td>
+                            <td>The Internet Archive</td>
+                            <td>DC</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mx-5 mb-3 border pt-3">
+            <h4>
+                Metadata alignment
+            </h4>
+            <p>
+                After the identification of the proper metadata standards for each item, the following step is the metadata alignment. This procedure allows us to identify how each descriptive feature of the items is defined by each standard. The Dublin Core (DC) is used as a guide for this process since it is one of the most generic standards. The properties are divided to better represent the different pieces of information related to people (who), places (where), dates (when), subjects/concepts (what).
+            </p>
+            
+            <div class="container mb-3 px-5 d-flex flex-column justify-content-start align-content-center overflow-scroll">
+                <div class="d-flex justify-content-center">
+                    <div class="btn-group mb-1 py-2" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light border" onclick="pickTable('to-who-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHO</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('to-what-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHAT</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('to-where-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHERE</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('to-when-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHEN</button>
+                    </div>
+                </div>
+                <table id="to-who-table" class="table table-bordered table-hover table-condensed" >
+                    <thead><tr><th title="Field #1">Property</th>
+                    <th title="Field #2">DC</th>
+                    <th title="Field #3">schema.org</th>
+                    <th title="Field #4">TEI/XML</th>
+                    <th title="Field #5">MODS</th>
+                    <th title="Field #6">LIDO</th>
+                    <th title="Field #7">MMD</th>
+                    <th title="Field #8">CIDOC CRM</th>
+                    <th title="Field #9">EDM</th>
+                    </tr></thead>
+                    <tbody><tr>
+                    <td>Contributor</td>
+                    <td>dc:contributor</td>
+                    <td>::contibutor</td>
+                    <td>[&lt;correspAction type=&quot;received&quot;&gt;&lt;persName&gt;]</td>
+                    <td>&lt;name&gt; &lt;namePart&gt; &lt;role&gt; &lt;roleTerm&gt;</td>
+                    <td>&lt;actor&gt;</td>
+                    <td>&lt;name&gt; / &lt;namePart&gt;</td>
+                    <td>-</td>
+                    <td>dc:contributor</td>
+                    </tr>
+                    <tr>
+                    <td>Creator</td>
+                    <td>dc:creator</td>
+                    <td>::creator</td>
+                    <td>&lt;author&gt;<br/>[&lt;correspAction type=&quot;sent/received&quot;&gt;&lt;persName&gt;]</td>
+                    <td>&lt;name&gt; &lt;namePart&gt; &lt;role&gt; &lt;roleTerm&gt;</td>
+                    <td>&lt;actor&gt;</td>
+                    <td>&lt;artist&gt;</td>
+                    <td>E39 Creator<br/>P94 has created (was created by)<br/>P14 carried out by (performed)</td>
+                    <td>dc:creator</td>
+                    </tr>
+                    <tr>
+                    <td>Character</td>
+                    <td> </td>
+                    <td>::character  </td>
+                    <td> </td>
+                    <td>&lt;name&gt; &lt;namePart&gt; &lt;role&gt; &lt;roleTerm&gt;</td>
+                    <td>&lt;actor&gt;</td>
+                    <td>-</td>
+                    <td> </td>
+                    <td> </td>
+                    </tr>
+                    <tr>
+                    <td>Subject</td>
+                    <td>dc:subject:subj</td>
+                    <td>::about</td>
+                    <td>&lt;msContents&gt;</td>
+                    <td>&lt;subject&gt;</td>
+                    <td>&lt;subject&gt;</td>
+                    <td>	descriptions/description</td>
+                    <td>	P129 is about (is subject of)<br/>P104 is subject to (applies to)</td>
+                    <td>dc:subject</td>
+                    </tr>
+                    <tr>
+                    <td>Publisher</td>
+                    <td>dcterms:publisher</td>
+                    <td>::publisher</td>
+                    <td>&lt;publisher&gt; &lt;publicationStmt&gt;</td>
+                    <td>&lt;publisher&gt;</td>
+                    <td> </td>
+                    <td>publisher</td>
+                    <td>-</td>
+                    <td> </td>
+                    </tr>
+                    </tbody></table>
+
+
+
+                    <table id="to-what-table" class="d-none table table-bordered table-hover table-condensed">
+                        <thead><tr><th title="Field #1">Property</th>
+                        <th title="Field #2">DC</th>
+                        <th title="Field #3">schema.org</th>
+                        <th title="Field #4">TEI/XML</th>
+                        <th title="Field #5">MODS</th>
+                        <th title="Field #6">LIDO</th>
+                        <th title="Field #7">MMD</th>
+                        <th title="Field #8">CIDOC CRM</th>
+                        <th title="Field #9">EDM</th>
+                        </tr></thead>
+                        <tbody><tr>
+                        <td>Title</td>
+                        <td>dc:title</td>
+                        <td>:: title </td>
+                        <td>&lt;title&gt;</td>
+                        <td>&lt;titleInfo&gt;</td>
+                        <td>&lt;titleSet&gt;</td>
+                        <td>&lt;title&gt;</td>
+                        <td>E35 Title<br/>P102 has title (is title of)</td>
+                        <td>dc:title</td>
+                        </tr>
+                        <tr>
+                        <td>Subject</td>
+                        <td>dc:subject</td>
+                        <td>:: about </td>
+                        <td>&lt;msContents&gt;</td>
+                        <td>&lt;subject&gt; &lt;titleInfo&gt;</td>
+                        <td>&lt;subject&gt;</td>
+                        <td>&lt;release id&gt;/&lt;recording id&gt;/&lt;label id&gt;/...</td>
+                        <td> P129 is about (is subject of)<br/>P104 is subject to (applies to)</td>
+                        <td>dc:subject</td>
+                        </tr>
+                        <tr>
+                        <td>Material</td>
+                        <td>dcterms:medium</td>
+                        <td>:: material</td>
+                        <td> </td>
+                        <td>&lt;physicalDescription&gt; &lt;form&gt;</td>
+                        <td>&lt;termMaterialsTexh&gt;</td>
+                        <td>&lt;medium&gt;</td>
+                        <td>E57 Material</td>
+                        <td>dcterms:medium</td>
+                        </tr>
+                        <tr>
+                        <td>Technique</td>
+                        <td> </td>
+                        <td>– </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>&lt;termMaterialsTexh&gt;</td>
+                        <td>&lt;medium&gt;&lt;format&gt;</td>
+                        <td>P32 general technique</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>RIghts</td>
+                        <td>dc:rights</td>
+                        <td>:: usageInfo </td>
+                        <td> </td>
+                        <td>&lt;originInfo&gt;</td>
+                        <td>&lt;rightsType&gt;</td>
+                        <td>&lt;release&gt;&lt;status&gt;</td>
+                        <td>E30 Right<br/></td>
+                        <td>edm:rights</td>
+                        </tr>
+                        <tr>
+                        <td>Type</td>
+                        <td>dc:type</td>
+                        <td>:: rangeIncludes/ :: domainIncludes</td>
+                        <td> </td>
+                        <td>&lt;typeOfResource</td>
+                        <td>&lt;objectType&gt;</td>
+                        <td>&lt;medium&gt;&lt;format&gt;</td>
+                        <td>E55 Type<br/></td>
+                        <td>edm:type </td>
+                        </tr>
+                        <tr>
+                        <td>Description</td>
+                        <td>dc:description</td>
+                        <td>:: description</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>&lt;subject&gt;</td>
+                        <td>&lt;disambiguation&gt;</td>
+                        <td>P3 has note (E62 String)</td>
+                        <td>dc:description</td>
+                        </tr>
+                        <tr>
+                        <td>Identifier</td>
+                        <td>dc:identifier</td>
+                        <td>:: identifier</td>
+                        <td> </td>
+                        <td>&lt;identifier&gt;</td>
+                        <td>&lt;identifier&gt;</td>
+                        <td>&lt;release id&gt;/&lt;recording id&gt;/&lt;label id&gt;/...</td>
+                        <td>P1 is identified by (E41 Appellation)</td>
+                        <td>dc:identifier</td>
+                        </tr>
+                        <tr>
+                        <td>Format</td>
+                        <td>dc:format</td>
+                        <td>-/ :: fileFormat / :: encodingFormat </td>
+                        <td> </td>
+                        <td>&lt;typeOfResource&gt;</td>
+                        <td>&lt;objectMesurementSet&gt;</td>
+                        <td>&lt;medium&gt;&lt;format&gt;</td>
+                        <td> </td>
+                        <td>edm:hasType</td>
+                        </tr>
+                        <tr>
+                        <td>Dimension</td>
+                        <td>dcterms:format</td>
+                        <td>– </td>
+                        <td> </td>
+                        <td>&lt;physicalDescription&gt; &lt;extent&gt;</td>
+                        <td>&lt;objectMesurementSet&gt;</td>
+                        <td>&lt;medium&gt;&lt;format&gt;/&lt;recording&gt;&lt;length&gt;</td>
+                        <td>E16 Measurement<br/>E54 Dimension</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>Included in</td>
+                        <td>dcterms:isPartOf</td>
+                        <td>:: isPartOf </td>
+                        <td> </td>
+                        <td>&lt;part&gt;</td>
+                        <td>&lt;relatedWorkRelType&gt;</td>
+                        <td>–</td>
+                        <td>P46 is composed of (is part of) E78 Curated Holding (is part of)</td>
+                        <td>dcterms:isPartOf</td>
+                        </tr>
+                        <tr>
+                        <td>has style</td>
+                        <td> </td>
+                        <td>::genre</td>
+                        <td> </td>
+                        <td>&lt;genre&gt; </td>
+                        <td>&lt;classificationWrap type=&quot;style&quot;&gt;</td>
+                        <td>&lt;style&gt;</td>
+                        <td> </td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>Language</td>
+                        <td>dc:language</td>
+                        <td>::inLanguage</td>
+                        <td>&lt;textLang&gt;</td>
+                        <td>&lt;language&gt;</td>
+                        <td> </td>
+                        <td>&lt;language&gt;</td>
+                        <td>E56 Language<br/>P72 has language</td>
+                        <td>dc:language</td>
+                        </tr>
+                        </tbody></table>
+
+
+                        <table id="to-where-table" class="d-none table table-bordered table-hover table-condensed">
+                            <thead><tr><th title="Field #1">Property</th>
+                            <th title="Field #2">DC</th>
+                            <th title="Field #3">schema.org</th>
+                            <th title="Field #4">TEI/XML</th>
+                            <th title="Field #5">MODS</th>
+                            <th title="Field #6">LIDO</th>
+                            <th title="Field #7">MMD</th>
+                            <th title="Field #8">CIDOC CRM</th>
+                            <th title="Field #9">EDM</th>
+                            </tr></thead>
+                            <tbody><tr>
+                            <td>Place of birth</td>
+                            <td>dcterms:coverage</td>
+                            <td>:: birthPlace</td>
+                            <td> </td>
+                            <td>&lt;originInfo&gt; &lt;place&gt;</td>
+                            <td>&lt;vitalPlaceActor&gt;</td>
+                            <td>&lt;begin-area&gt;</td>
+                            <td>P98 brought into life (E67 Birth)</td>
+                            <td>dcterms:coverage</td>
+                            </tr>
+                            <tr>
+                            <td>place of creation</td>
+                            <td>dcterms:coverage</td>
+                            <td>:: locationCreated / :: countryOfOrigin </td>
+                            <td>&lt;creation&gt;&lt;placeName&gt; [<br/>[&lt;correspAction type=&quot;sent&quot;&gt;&lt;placeName&gt;]</td>
+                            <td>&lt;location&gt; &lt;phisicalLocation&gt;</td>
+                            <td>&lt;eventPlace&gt;</td>
+                            <td>&lt;release-event&gt;&lt;area&gt;</td>
+                            <td>P168 place is defined by (defines place)</td>
+                            <td>dcterms:coverage</td>
+                            </tr>
+                            <tr>
+                            <td>current location</td>
+                            <td>dc:coverage</td>
+                            <td>:: location / </td>
+                            <td>&lt;place&gt;</td>
+                            <td>&lt;location&gt; &lt;phisicalLocation&gt;</td>
+                            <td>&lt;repisutirySet&gt;</td>
+                            <td>&lt;area&gt;</td>
+                            <td>P74 has current or former residence (is current or former residence of)<br/></td>
+                            <td>edm:currentLocation   </td>
+                            </tr>
+                            <tr>
+                            <td>Place of death</td>
+                            <td>dcterms:coverage</td>
+                            <td>:: deathPlace</td>
+                            <td> </td>
+                            <td>&lt;originInfo&gt; &lt;place&gt;</td>
+                            <td>&lt;vitalPlaceActor&gt;</td>
+                            <td>&lt;end-area&gt;</td>
+                            <td>P100 was death of (E69 Death)</td>
+                            <td>dcterms:coverage</td>
+                            </tr>
+                            </tbody></table>
+                    
+
+
+                            <table id="to-when-table" class="d-none table table-bordered table-hover table-condensed">
+                                <thead><tr><th title="Field #1">Property</th>
+                                <th title="Field #2">DC</th>
+                                <th title="Field #3">schema.org</th>
+                                <th title="Field #4">TEI/XML</th>
+                                <th title="Field #5">MODS</th>
+                                <th title="Field #6">LIDO</th>
+                                <th title="Field #7">MMD</th>
+                                <th title="Field #8">CIDOC CRM</th>
+                                <th title="Field #9">EDM</th>
+                                </tr></thead>
+                                <tbody><tr>
+                                <td>Date of birth</td>
+                                <td>dcterms:date</td>
+                                <td>:: birthDate</td>
+                                <td> </td>
+                                <td>&lt;originInfo&gt;: &lt;dateOther&gt;</td>
+                                <td>&lt;vitalDatesActor&gt;</td>
+                                <td>&lt;life-span&gt;&lt;begin&gt;</td>
+                                <td>P98 brought into life (E67 Birth)</td>
+                                <td>dcterms:temporal</td>
+                                </tr>
+                                <tr>
+                                <td>Date of death</td>
+                                <td>dcterms:date</td>
+                                <td>:: deathDate</td>
+                                <td> </td>
+                                <td> </td>
+                                <td>&lt;vitalDatesActor&gt;</td>
+                                <td>&lt;life-span&gt;&lt;end&gt;/&lt;lifespan&gt;&lt;ended&gt;</td>
+                                <td>P100 was death of (E69 Death)</td>
+                                <td>dcterms:temporal</td>
+                                </tr>
+                                <tr>
+                                <td>Date of creation</td>
+                                <td>dc:created</td>
+                                <td>:: dateCreated</td>
+                                <td>&lt;creation&gt;&lt;date&gt; [<br/>[&lt;correspAction type=&quot;sent&quot;&gt;&lt;date&gt;]]</td>
+                                <td>&lt;originiInfo&gt;: &lt;dateCreated&gt;</td>
+                                <td>&lt;earliesDate&gt;</td>
+                                <td>&lt;release-event&gt;&lt;date&gt;</td>
+                                <td>E4 Period<br/>E52 Time-Span</td>
+                                <td>dc:created</td>
+                                </tr>
+                                <tr>
+                                <td>Period</td>
+                                <td>dcterms:temporal</td>
+                                <td>schema:temporalCoverage</td>
+                                <td> </td>
+                                <td>&lt;originiInfo&gt;: &lt;type=&quot;date&gt;</td>
+                                <td>&lt;eventDate&gt;</td>
+                                <td>&lt;time-span&gt;</td>
+                                <td>E4 Period<br/>E52 Time-Span</td>
+                                <td>dcterms:temporal</td>
+                                </tr>
+                                </tbody></table>
+
+
+
+            </div>
+        </section>
+
+        <section id="theoretical-model" class="mx-5 mb-3 border pt-3">
+            <h3>
+                Theoretical model
+            </h3>
+            <p>
+                In the Theoretical Model the original data presented in the Conceptual Map are enriched with new properties, to express the four categories pointed out in the previous step (people, places, dates, subjects). The data are gathered from other sources.
+            </p>
+            <div id="img-container3" class="container w-75 mb-3 px-5">
+                <img src="assets/conceptual-map.png" class="img-fluid"/>
+            </div>
+        </section>
+
+        <section id="enriched-er" class="mx-5 mb-3 border pt-3">
+            <h3>
+                Enriched E/R
+            </h3>
+            <p>
+                The new real data gathered in the Theoretical model are expressed in this step in a more abstract way, resulting in an enriched version of the previous E/R Model.
+            </p>
+            <div id="img-container4" class="container w-75 mb-3 px-5">
+                <img src="assets/enriched-er.png" class="img-fluid"/>
+            </div>
+            
+        </section>
+
+        <section id="conceptual-model" class="mx-5 mb-3 border pt-3">
+            <h3>
+                The Conceptual model
+            </h3>
+            <p>
+                The Conceptual Model is a formal representation of the theoretical model, where entities and relationships are expressed through ontologies labels. To create such a model schemas, vocabularies and ontologies are used. To produce a graphical representation of this formalisation the Graphical Framework for Owl Ontologies, Graffoo, has been used.
+                <br/><br/>
+                Different ontologies are used to describe each concept in the most accurate way. The ontologies used are:
+                <ul>
+                    <li>
+                        CIDOC-CRM: is a good trial of harmonisation of information coming from different domains, even if it was first intended for describing museum objects.
+                    </li>
+                    <li>
+                        DBPEDIA ONTOLOGY: was particularly useful for expressing the difference between a real person and a fictional character (as the FOAF class Person refers only to real people).
+                    </li>
+                    <li>
+                        DCTERMS: extremely useful for the property dcterms:alternative which allows to describe an alternative title (as in the case of the Merlijn printing)
+                    </li>
+                    <li>
+                        FABIO: describes accurately the classes of the bibliographic material and the properties related to the activity of publishing, that are useful to describe the library domain.
+                    </li>
+                    <li>
+                        FOAF: provides specific labels useful to describe properties related to people.
+                    </li>
+                    <li>
+                        OWL: is used for the property isPartOf.
+                    </li>
+                    <li>
+                        SCHEMA: applied to all items which did not necessarily belong in the LAM domain (movie and
+                        soundtrack). It was also adopted to describe persons.
+                    </li>
+                    <li>
+                        XSD: is used to assign data types.
+                    </li>
+                </ul>
+            </p>
+            <div id="img-container5" class="container w-75 mb-3 px-5">
+                <img src="assets/conceptual-model.png" class="img-fluid"/>
+            </div>
+            
+        </section>
+        
+
+        
+    </main>
+
+    <footer>
+    </footer>   
+
+    <script>
+
+
+        var options1 = {
+            fillContainer: false,
+            zoomPosition: 'original'
+        };
+        
+        // If the width and height of the image are not known or to adjust the image to the container of it
+        var options2 = {
+            fillContainer: true,
+            offset: {vertical: 0, horizontal: 10},
+        };
+        
+        new ImageZoom(document.getElementById("img-container1"), options1);
+        new ImageZoom(document.getElementById("img-container2"), options1);
+        new ImageZoom(document.getElementById("img-container3"), options1);
+        new ImageZoom(document.getElementById("img-container4"), options1);
+        new ImageZoom(document.getElementById("img-container5"), options1);
+
+
+        function pickTable(idOfTableToEnable, idsOfTablesToDisable) {
+            var el = document.getElementById(idOfTableToEnable)
+            el.classList.remove("d-none");
+            for (tableID of idsOfTablesToDisable) {
+                if (tableID !== idOfTableToEnable) {
+                    document.getElementById(tableID).classList.add('d-none');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

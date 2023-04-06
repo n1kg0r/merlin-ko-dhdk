@@ -1,0 +1,166 @@
+@base <https://camelod.github.io/merlin/> .
+@prefix base: <https://apollo11moonlonding.github.io/> .
+
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/7.1.1/> .   
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe-2-1-0/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+#Prefixes for authority records
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix db: <https://dbpedia.org/page/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix geonames: <http://www.geonames.org/> .
+
+
+# FIRST ITEM, PRINT MERLIN
+
+<item/Merljin> a crm:E36_Visual_Item ;
+crm:P1_is_identified_by "RP-P-2016-49-82-9"^^xsd:string ; 
+dc:title "Merljin"^^xsd:string ;
+dc:alternative "Merlinus"^^xsd:string ; 
+schema:dateCreated "1493"^^xsd:gYear;
+crm:P108_was_produced_by <person/WolgemutMichael>, <person/PleydenwurffWilhelm> ;
+schema:locationCreated <place/Nuremberg> ;
+crm:P45_consist_of wiki:Q11472 ;
+crm:P32_used_general_technique wiki:Q582102 ;
+crm:P50_has_current_keeper <institution/Rijksmuseum> ;
+crm:P55_has_current_location <place/Rijksmuseum> ;
+crm:P43_has_dimension "55 mm × 54 mm"^^xsd:string ;
+crm:P62_depicts <character/Merlin> ;
+owl:isPartOf <related/Album>.
+
+
+# SECOND ITEM: VIVIAN AND MERLIN
+
+<item/VivianAndMerlin> a dbo:Picture ;
+dc:title "Vivian and Merlin"^^xsd:string ;
+crm:P1_is_identified_by "92521897"^^xsd:string ;
+crm:P4_has_time-span "1870-1880"^^xsd:string ;
+crm:P50_has_current_keeper <institution/LibofCon> ;
+crm:P55_has_current_location <place/LibofCon> ;
+crm:P43_has_dimension "315 mm x 280 mm"^^xsd:string ;
+crm:P32_used_general_technique wiki:Q580807 ;
+crm:P108_was_produced_by <person/CameronJuliaMargaret> ;
+crm:P62_depicts <character/Merlin> ;
+crm:P62_depicts <character/Vivian>.
+
+
+#Third Item: Merlin and Arthur
+<item/MerlinandArthur> a crm:E22_Man_Made_Object;
+schema:dateCreated "XIX"^^xsd:gYear;
+crm:P50_has_current_keeper <place/National museum Wales> ;
+crm:P108_was_produced_by <person/JohnSirWilliamGoscombe>
+crm:P32_used_general_technique wiki:Q860861 ;
+crm:P62_depicts <character/Merlin>
+crm:P62_depicts <character/Arthur>
+crm:P45_consist_of “Bronze” wiki:Q34095;
+crm:P2_has_type “Statue” wiki:Q179700
+
+#Fourth Item: Prophecie de Merlin
+dc:title "Prophecie_de_Merlin"^^xsd:string ;
+schema:dateCreated "XIII"^^xsd:gYear;
+crm:P108_was_produced_by <person/Anonymous>,
+crm:P50_has_current_keeper <place/Archivio_di_Stato_di_Bologna> ;
+crm:P45_consist_of “Paper” wiki:Q11472;
+crm:P2_has_type “Manuscript” wiki:Q87167;
+
+
+#PEOPLE
+# WOLGEMUT MICHAEL
+<person/WolgemutMichael> a foaf:Person;
+owl:sameAs viaf:74000850, wiki:Q262771, db:Michel_Wolgemut ;
+foaf:name "Wolgemut, Michael"^^xsd:string ;
+schema:birthPlace <place/Nuremberg> ;
+schema:birthDate "1434"^^xsd:gYear ;
+schema:deathPlace <place/Nuremberg> ;
+schema:deathDate "1519"^^xsd:gYear .
+
+ # Wilhelm Pleydenwurff
+<person/PleydenwurffWilhelm> a foaf:Person ;
+owl:sameAs viaf:85055544, wiki:Q1482425, db:Wilhelm_Pleydenwurff ;
+foaf:name "Pleydenwurff, Wilhelm"^^xsd:string ;
+schema:birthPlace <place/Nuremberg> ;
+schema:birthDate "1460"^^xsd:gYear ;
+schema:deathPlace <place/Nuremberg> ;
+schema:deathDate "1494"^^xsd:gYear .
+
+# JULIA MARGARET CAMERON 
+<person/CameronJuliaMargaret> a foaf:Person;
+owl:sameAs viaf:61616074, wiki:Q230120 ;
+foaf:name "Cameron, Julia Margaret"^^xsd:string ;
+schema:birthPlace <place/Kolkata> ;
+schema:birthDate "1815"^^xsd:gYear ;
+schema:deathPlace <place/Kolkata> ;
+schema:deathDate "1879"^^xsd:gYear .
+
+
+#John Sir William Goscombe
+<person/JohnSirWilliamGoscombe> a foaf:Person ;
+owl:sameAs viaf:13622688 , wiki:Q3069617, db:Goscombe_John ;
+foaf:name “John, Sir William Goscombe"^^xsd:string ;
+schema:birthPlace <place/Cardiff> ;
+schema:birthDate "21/02/1860"^^xsd:gYear ;
+schema:deathPlace <place/London> ;
+schema:deathDate "15/12/1952"^^xsd:gYear .
+
+
+#CHARACTERS
+
+# CENTRAL TOPIC, MERLIN
+<character/Merlin> a dbo:FictionalCharacter ;
+owl:sameAs db:Merlin, wiki:Q188044, viaf:74645251 ;
+foaf:knows <character/Vivian> .
+
+# VIVIAN
+<character/Vivian> a dbo:FictionalCharacter ;
+owl:sameAs db:Lady_of_the_Lake, wiki:Q854036, viaf:220160370 ;
+foaf:knows <character/Merlin> .
+
+# PLACES
+<place/LibofCon> a crm:E53_Place ;
+owl:sameAs geonames:2861650 .
+
+<place/Nuremberg> a crm:E53_Place ;
+owl:sameAs db:Nuremberg , wiki:Q2090, geonames:4139387 .
+
+<place/Kolkata> a crm:E53_Place ;
+owl:sameAs db:Kolkata, wiki:Q1348, geonames:1274004 .
+
+<place/Rijksmuseum> a crm:E53_Place ;
+owl:sameAs geonames:6884785 .
+
+<place/National Museum Wales> a crm:E53_Place ;
+owl:sameAs viaf:198843583 , wiki:Q2046319, geonames:11951795
+
+<place/London> a crm:E53_Place ;
+owl:sameAs viaf:261467287 , wiki:Q84, geonames:2643743
+
+<place/Cardiff> a crm:E53_Place ;
+owl:sameAs viaf:154757441 , wiki:Q10690, geonames:2653822
+
+<place/Archivi di Stato di Bologna> a crm:E53_Place ;
+wiki:Q45031324
+
+#INSTITUTIONS
+
+<institution/LibofCon> a crm:E39_Actor ;
+owl:sameAs viaf:151962300 , wiki:Q131454;
+crm:P74_has_current_or_former_residence <place/LibofCon> .
+
+<institution/Rijksmuseum> a crm:E39_Actor;
+owl:sameAs viaf:159624082 , wiki:Q190804;
+crm:P74_has_current_or_former_residence <place/Rijksmuseum> .
+
+
+
+
