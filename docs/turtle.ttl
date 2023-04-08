@@ -93,7 +93,8 @@ foaf:name "Wolgemut, Michael"^^xsd:string ;
 schema:birthPlace <place/Nuremberg> ;
 schema:birthDate "1434"^^xsd:gYear ;
 schema:deathPlace <place/Nuremberg> ;
-schema:deathDate "1519"^^xsd:gYear .
+schema:deathDate "1519"^^xsd:gYear ;
+foaf:knows <person/PleydenwurffWilhelm>.
 
  # Wilhelm Pleydenwurff
 
@@ -103,7 +104,8 @@ foaf:name "Pleydenwurff, Wilhelm"^^xsd:string ;
 schema:birthPlace <place/Nuremberg> ;
 schema:birthDate "1460"^^xsd:gYear ;
 schema:deathPlace <place/Nuremberg> ;
-schema:deathDate "1494"^^xsd:gYear .
+schema:deathDate "1494"^^xsd:gYear ;
+foaf:knows <person/WolgemutMichael>.
 
 # JULIA MARGARET CAMERON
  
