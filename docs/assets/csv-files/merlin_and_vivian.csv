@@ -1,0 +1,13 @@
+Subject,Predicate,Object
+Photography,crm:P102_has_dcterms:title,Vivian and Merlin
+Photography,crm:P62_depicts,Merlin
+Photography,crm:P62_depicts,Vivian
+Photography,has crm:E55_Type,Photography
+Photography,crm:P4_has_time-span,1870s
+Photography,crm:P50_has_current_keeper,Library of Congress
+Photography,P74_has_current_or_former_residence,Library of Congress
+Photography,crm:P43_has_dimension,315 x 280 mm
+Photography,crm:P32_used_general_technique,albumen print
+Photography,schema:copyrightHolder,public domain
+Photography,crm:P108_was_produced_by,"Cameron, Julia Margaret"
+Photography,crm:P1_is_identified_by,92521897

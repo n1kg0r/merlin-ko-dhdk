@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+Book,dcterms:title,Prophetia Merlini
+Book,crm:P108_was_produced_by,Geoffrey of Monmouth
+Book,crm:P108_was_produced_by,Caroline Eckhardt
+Book,schema:dateCreated,XII century
+Book,dc:language,Middle English/English
+Book,crm:P50_has_current_keeper,British library
+,crm:P45_consist_of,Paper

@@ -1,0 +1,17 @@
+Subject,Predicate,Object
+Print,dcterms:title,Merlijn
+Print,dcterms:alternative,Merlinus
+Print,crm:P32_used_general_technique,letterpress printing
+Print,crm:P45_consist_of,Paper
+Print,crm:P50_has_current_keeper,"Rijskmuseum Amsterdam, "
+Print,P74_has_current_or_former_residence,"Rijskmuseum Amsterdam, "
+Print,crm:P108_was_produced_by,Michel Wolgemut
+Print,crm:P108_was_produced_by, Wilhelm Pleydenwurff 
+Print,schema:locationCreated,Neurenberg
+Print,schema:dateCreated,1493
+Print,crm:P1_is_identified_by,RP-P-2016-49-82-9
+Print,schema:copyrightHolder,public domain
+Print,crm:P43_has_dimension,55 mm × 54 mm
+Print,owl:isPartOf,Album met voorstellingen uit de Neurenbergkroniek van Schedel (RP-P-2016-49)
+Print,crm:P62_depicts,Merlin
+Print,crm:E55_Type,print

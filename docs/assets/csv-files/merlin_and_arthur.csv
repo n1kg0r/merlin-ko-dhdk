@@ -1,0 +1,12 @@
+Subject,Predicate,Object
+Tarot Deck,,17 x 12 x 7 cm
+Tarot Deck,crm:P102_has_title,"""The Merlin  Tarot"""
+Tarot Deck,crm:E55_Type,Tarot Deck
+Tarot Deck,E57 Material,cardboard
+Tarot Deck,dcterms:publisher,Aquarian Press
+Tarot Deck,crm:P72_has_language,English
+Tarot Deck,E30 Right,Aquarian Press
+,dc:format,Deck of cards
+,dc:created,1992
+,dc:creator,"R.J. Stewart, Miranda Grey"
+,dc:subject:subj,Merlin

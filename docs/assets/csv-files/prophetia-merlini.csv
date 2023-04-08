@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+Lyrical Opera,crm:P102_has_title,Vivian and Merlin
+Lyrical Opera,crm:E55_Type,Lyrical Opera
+Lyrical Opera,::genre,Romantic
+Lyrical Opera,dcterms:publisher,Schirmer
+Lyrical Opera,crm:P72_has_language,English
+Lyrical Opera,E30 Right,Public Domain
+Lyrical Opera,dc:format,Sheet music
+Lyrical Opera,dc:created,1907
+Lyrical Opera,dc:creator,"Hadley, Henry Kimball, Ethel Watts Mumford"
+Lyrical Opera,dc:subject:subj,"Vivian, merlin"

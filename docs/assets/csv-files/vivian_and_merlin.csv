@@ -1,0 +1,9 @@
+Subject,Predicate,Object
+Manuscript,crm:P108_was_produced_by,Anonymous
+Manuscript,schema:dateCreated,XIII century
+Manuscript,dc:language,French/Italian
+Manuscript,crm:P50_has_current_keeper,Archivi di stato di Bologna
+Manuscript,dcterms:title,Prophecie de Merlin
+Manuscript,crm:P45_consist_of,Paper
+Manuscript,crm:P2_has_type,Manuscript
+Manuscript,schema:locationCreated,France

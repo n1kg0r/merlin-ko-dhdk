@@ -1,0 +1,14 @@
+Subject,Predicate,Object
+Painting,crm:P102_has_title,"""The Beguiling of Merlin"""
+Painting,crm:P62_depicts,"Merlin, Vivian"
+Painting,dc:creator,Sir Edward Coley Burne-Jones
+Painting,"crm:E55_Type
+",Painting
+Painting,crm:E57_Material,Canvas
+Painting,crm:P32_general_technique,Oil on canvas
+Painting,crm:E16_Measurement,186 cm x 111 cm
+Painting,crm:P50_has_current_keeper,"Lady Lever Art Gallery, National Museums and Galleries on Merseyside, Liverpool"
+Painting,dc:created,1870 - 1874
+Painting,"E30 Right
+",Public domain
+Painting,crm:P1_is_identified_by,LL3121        

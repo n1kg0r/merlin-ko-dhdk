@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+Sculpture,crm:P50_has_current_keeper,National museum Wales
+Sculpture,crm:P32_used_general_technique,sculpture
+Sculpture,crm:P45_consist_of,bronze
+Sculpture,schema:dateCreated,XIX
+Sculpture,crm:P108_was_produced_by,"JOHN, Sir William Goscombe "
+Sculpture,crm:P2_has_type,Statue
+Sculpture,crm:P62_depicts,Merlin and Arthur
