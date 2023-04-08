@@ -82,6 +82,22 @@ crm:P50_has_current_keeper <institution/ArchStatBol> ;
 crm:P126_is_about <character/Merlin>;
 crm:P45_consist_of wiki:Q11472 .
 
+#RELATED OBJECTS
+
+<related/Album> a fabio:Book;
+dc:title "Album met voorstellingen uit de Neurenbergkroniek van Schedel"^^xsd:string ;
+schema:dateCreated "1493"^^xsd:gYear;
+crm:P108_was_produced_by <person/WolgemutMichael>, <person/PleydenwurffWilhelm> ;
+schema:locationCreated <place/Nuremberg> ;
+crm:P45_consist_of wiki:Q11472 ;
+crm:P32_used_general_technique wiki:Q582102 ;
+crm:P50_has_current_keeper <institution/Rijksmuseum> ;
+crm:P55_has_current_location <place/Rijksmuseum> ;
+crm:P43_has_dimension "460mm × 315mm"^^xsd:string ;
+crm:P62_depicts <character/Merlin> ;
+crm:P1_is_identified_by "RP-P-2016-49"^^xsd:string ; 
+owl:sameAs <http://hdl.handle.net/10934/RM0001.COLLECT.610005> .
+
 
 #==== PEOPLE ====
 
@@ -121,7 +137,7 @@ schema:deathDate "1879"^^xsd:gYear .
 
 <person/WilliamGoscobe> a foaf:Person ;
 owl:sameAs viaf:13622688 , wiki:Q3069617, db:Goscombe_John ;
-foaf:name "John, Sir William Goscombe"^^xsd:string ;
+foaf:name "John, William Goscombe"^^xsd:string ;
 schema:birthPlace <place/Cardiff> ;
 schema:birthDate "21/02/1860"^^xsd:gYear ;
 schema:deathPlace <place/London> ;
@@ -134,8 +150,7 @@ schema:deathDate "15/12/1952"^^xsd:gYear .
 
 <character/Merlin> a dbo:FictionalCharacter ;
 owl:sameAs db:Merlin, wiki:Q188044, viaf:74645251 ;
-foaf:knows <character/Vivian> ;
-foaf:knows <character/Arthur> .
+foaf:knows <character/Vivian>, <character/Arthur> . 
 
 # VIVIAN
 
@@ -186,9 +201,9 @@ owl:sameAs viaf:261467287 , wiki:Q84, geonames:2643743 .
 <place/Cardiff> a crm:E53_Place ;
 owl:sameAs viaf:154757441 , wiki:Q10690, geonames:2653822 .
 
-#!!!!!!! ATTENZIONE !!!!!!
+# ARCHIVIO DI STATO BOLOGNA
 <place/ArchStatBol> a crm:E53_Place ; 
-owl:sameAS wiki:Q45031324 .
+owl:sameAS <https://goo.gl/maps/H6DyJ5cgGSzCtBWH8> .
  
 #==== INSTITUTIONS ====
 
