@@ -63,7 +63,7 @@ owl:sameAs <https://lccn.loc.gov/92521897>.
 #Third Item: Merlin and Arthur
 
 <item/MerlinandArthur> a crm:E22_Man_Made_Object;
-schema:dateCreated "XIX"^^xsd:gYear;
+schema:dateCreated "1800-1900"^^xsd:string;
 crm:P50_has_current_keeper <institution/NatMusWales> ;
 crm:P108_was_produced_by <person/WilliamGoscobe> ;
 crm:P32_used_general_technique wiki:Q860861 ;
@@ -76,7 +76,7 @@ crm:P45_consist_of wiki:Q34095 .
 
 <item/ProphecieDeMerlin> a fabio:Book ;
 dc:title "Prophecie_de_Merlin"^^xsd:string ;
-schema:dateCreated "XIII"^^xsd:gYear;
+schema:dateCreated "1200-1300"^^xsd:string ;
 crm:P108_was_produced_by <person/Anonymous> ;
 crm:P50_has_current_keeper <institution/ArchStatBol> ;
 crm:P126_is_about <character/Merlin>;
@@ -141,7 +141,7 @@ foaf:name "John, William Goscombe"^^xsd:string ;
 schema:birthPlace <place/Cardiff> ;
 schema:birthDate "21/02/1860"^^xsd:gYear ;
 schema:deathPlace <place/London> ;
-schema:deathDate "15/12/1952"^^xsd:gYear .
+schema:deathDate "1952-12-15"^^xsd:gYear .
 
 
 #==== CHARACTERS ====
