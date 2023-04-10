@@ -28,7 +28,7 @@
                             THE PROJECT
                         </a>
                         <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <li><a class="dropdown-item text-dark-blue" href="index.html#idea" >Idea</a></li>
+                          <li><a class="dropdown-item text-dark-blue" href="index.html#domain" >Idea</a></li>
                           <li><a class="dropdown-item text-dark-blue" href="index.html#item" >Item</a></li>
                           <li><a class="dropdown-item text-dark-blue" href="index.html#team">Team</a></li>
                         </ul>
@@ -46,7 +46,7 @@
                                     Metadata
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light bg-light" role="menu" aria-labelledby="navbarDarkDropdownMenuLinkNested">
-                                    <li><a class="dropdown-item text-dark-blue" href="knowledge-organization.html#metadata-analysis" >Metadata Analysis</a></li>
+                                    <li><a class="dropdown-item text-dark-blue" href="knowledge-organization.html#knowledge-organization" >Metadata Analysis</a></li>
                                     <li><a class="dropdown-item text-dark-blue" href="knowledge-organization.html#metadata-alignment" >Metadata Alignment</a></li>
                                 </ul>
                             </li>
@@ -97,15 +97,32 @@
             
             <div class="container mb-3 px-5 d-flex flex-column justify-content-start align-content-center overflow-scroll">
                 <div class="d-flex justify-content-center">
-                    <div class="btn-group mb-1 py-2" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-print', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Merlijn</button>
+                    <div class="btn-group mb-1 py-2" role="group" aria-label="table choices">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked  onclick="pickTable('dd-print', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue text-center d-flex justify-content-center align-items-center h-100"  for="btnradio1">Merlijn</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="pickTable('dd-manuscript', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100" for="btnradio2">Prophecie de Merlin</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick="pickTable('dd-sculpture', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100" for="btnradio3">Merlin and Arthur</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" onclick="pickTable('dd-prophetia-merlini',['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100" for="btnradio4">Prophetia Merlini</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="pickTable('dd-photography',['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100"  for="btnradio1">Vivian and Merlin, Photography</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="pickTable('dd-painting', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100" for="btnradio2">The Beguiling of Merlin</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick="pickTable('dd-lyrical-opera', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100" for="btnradio3">Merlin and Vivian, Opera</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" onclick="pickTable('dd-tarot-deck', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue d-flex justify-content-center align-items-center h-100" for="btnradio4">The Merlin Tarot</label>
+
+                        <!-- <button type="button" class="btn btn-light border" onclick="pickTable('dd-print', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Merlijn</button>
                         <button type="button" class="btn btn-light border" onclick="pickTable('dd-manuscript', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Prophecie de Merlin</button>
                         <button type="button" class="btn btn-light border" onclick="pickTable('dd-sculpture', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Merlin and Arthur</button>
                         <button type="button" class="btn btn-light border" onclick="pickTable('dd-prophetia-merlini',['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Prophetia Merlini</button>
                         <button type="button" class="btn btn-light border" onclick="pickTable('dd-photography',['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Vivian and Merlin, Photography</button>
                         <button type="button" class="btn btn-light border" onclick="pickTable('dd-painting', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">The Beguiling of Merlin</button>
                         <button type="button" class="btn btn-light border" onclick="pickTable('dd-lyrical-opera', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">Merlin and Vivian, Opera</button>
-                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-tarot-deck', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">The Merlin Tarot</button>
+                        <button type="button" class="btn btn-light border" onclick="pickTable('dd-tarot-deck', ['dd-print', 'dd-manuscript', 'dd-sculpture', 'dd-prophetia-merlini', 'dd-photography', 'dd-painting', 'dd-lyrical-opera', 'dd-tarot-deck'])">The Merlin Tarot</button> -->
                     </div>
                 </div>
                 
