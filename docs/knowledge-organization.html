@@ -10,11 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
 </head>
-<body>
+<body class="bg-light">
     <header class="align-items-center">
-        <nav class="px-1 navbar navbar-expand-lg navbar-dark bg-dark-blue" style="position: fixed; z-index: 1; min-height: 10vh; width: 100%; height: 1fr;">
+        <nav class="px-1 navbar navbar-expand-lg navbar-dark bg-dark-blue" style="position: fixed; z-index: 100; height: 12vh; width: 100%;">
             <div class="container-fluid">
-              <a class="navbar-brand text-light" href="index.html" style="font-size: 2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">CameLOD</a>
+                <a class="navbar-brand text-light" href="index.html">
+                    <img href="index.html" class="text-light img-fluid card-img" src="./assets/camelod-logo.gif" style="height: 12vh; width: auto;" alt="CameLOD"/>
+                </a>
+              
+                
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -72,40 +77,40 @@
     </header>
 
 
-    <main>
-        <section id="knowledge-organization" class="d-flex flex-column justify-content-center align-items-center p-3">
+    <main class="text-dark-blue" style="padding-top: 12vh;">
+        <section id="knowledge-organization" class="d-flex flex-column justify-content-center align-items-center pt-2 ">
             <h2>
                 Knowledge Organization
             </h2>
         </section>
 
 
-        <section id="conceptual-map" class="mx-5 mb-3 border pt-3">
+        <section id="conceptual-map" class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 Conceptual Map
             </h3>
             <p>
                 The Conceptual Map represents the first step in the knowledge organization of the domain. It shows the real data related to the items and the domain in a graphical display using natural language labels to describe the entities and the relationships among them.
             </p>
-            <div id="img-container1" class="container w-75 mb-3 px-5">
+            <div class="container  w-75 p-2">
                 <img src="assets/conceptual-map.png" class="img-fluid"/>
             </div>
             
         </section>
 
-        <section id="er-model" class="mx-5 mb-3 border pt-3">
+        <section id="er-model" class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 E/R Model
             </h3>
             <p>
                 The Entity-Relationship Model represents a translation of the Conceptual Map to a higher level of abstract formalism; it focuses on the entities, relationships and their attributes. This abstraction was obtained by expressing the data with more general concepts.
             </p>
-            <div id="img-container2" class="container w-75 mb-3 px-5">
+            <div  class="container  w-75 p-2">
                 <img src="assets/er-model.png" class="img-fluid"/>
             </div>
         </section>
 
-        <section class="mx-5 mb-3 border pt-3">
+        <section class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 Metadata
             </h3>
@@ -191,7 +196,7 @@
             </div>
         </section>
 
-        <section class="mx-5 mb-3 border pt-3">
+        <section class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h4>
                 Metadata alignment
             </h4>
@@ -202,10 +207,21 @@
             <div class="container mb-3 px-5 d-flex flex-column justify-content-start align-content-center overflow-scroll">
                 <div class="d-flex justify-content-center">
                     <div class="btn-group mb-1 py-2" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light border" onclick="pickTable('to-who-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHO</button>
-                        <button type="button" class="btn btn-light border" onclick="pickTable('to-what-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHAT</button>
-                        <button type="button" class="btn btn-light border" onclick="pickTable('to-where-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHERE</button>
-                        <button type="button" class="btn btn-light border" onclick="pickTable('to-when-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHEN</button>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked onclick="pickTable('to-who-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue"  for="btnradio1">WHO</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="pickTable('to-what-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue" for="btnradio2">WHAT</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick="pickTable('to-where-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue" for="btnradio3">WHERE</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" onclick="pickTable('to-when-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">
+                        <label class="btn btn-outline-secondary text-dark-dark border-dark-blue" for="btnradio4">WHEN</label>
+                       
+
+                        <!-- <button type="button" class="btn btn-outline-secondary text-dark-blue border-dark-blue " onclick="pickTable('to-who-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHO</button>
+                        <button type="button" class="btn btn-outline-light text-dark-blue border-dark-blue" onclick="pickTable('to-what-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHAT</button>
+                        <button type="button" class="btn btn-outline-dark text-dark-blue border-dark-blue" onclick="pickTable('to-where-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHERE</button>
+                        <button type="button" class="btn btn-outline-dark text-dark-blue border-dark-blue" onclick="pickTable('to-when-table', ['to-what-table', 'to-who-table', 'to-where-table', 'to-when-table'])">WHEN</button> -->
                     </div>
                 </div>
                 <table id="to-who-table" class="table table-bordered table-hover table-condensed" >
@@ -556,32 +572,32 @@
             </div>
         </section>
 
-        <section id="theoretical-model" class="mx-5 mb-3 border pt-3">
+        <section id="theoretical-model"  class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 Theoretical model
             </h3>
             <p>
                 In the Theoretical Model the original data presented in the Conceptual Map are enriched with new properties, to express the four categories pointed out in the previous step (people, places, dates, subjects). The data are gathered from other sources.
             </p>
-            <div id="img-container3" class="container w-75 mb-3 px-5">
+            <div  class="container w-75 mb-3 px-5">
                 <img src="assets/theoretical-model.png" class="img-fluid"/>
             </div>
         </section>
 
-        <section id="enriched-er" class="mx-5 mb-3 border pt-3">
+        <section id="enriched-er"  class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 Enriched E/R
             </h3>
             <p>
                 The new real data gathered in the Theoretical model are expressed in this step in a more abstract way, resulting in an enriched version of the previous E/R Model.
             </p>
-            <div id="img-container4" class="container w-75 mb-3 px-5">
+            <div  class="container w-75 mb-3 px-5">
                 <img src="assets/enriched-er.png" class="img-fluid"/>
             </div>
             
         </section>
 
-        <section id="conceptual-model" class="mx-5 mb-3 border pt-3">
+        <section id="conceptual-model"  class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 The Conceptual model
             </h3>
@@ -617,7 +633,7 @@
                     </li>
                 </ul>
             </p>
-            <div id="img-container5" class="container w-75 mb-3 px-5">
+            <div class="container w-75 mb-3 px-5">
                 <img src="assets/conceptual-model.png" class="img-fluid"/>
             </div>
             
@@ -627,8 +643,14 @@
         
     </main>
 
-    <footer>
-    </footer>   
+    <footer class="w-100 bg-dark-blue py-3 m-0">
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-evenly">
+            <a class="ps-4 pb-0 navbar-brand text-light" href="index.html" >
+                <img href="index.html" class="text-light img-fluid card-img" src="./assets/camelod-logo.gif" style="height: 25vh; width: auto;" alt="CameLOD"/>
+            </a>
+            <h5 class="text-light fw-lighter fst-italic">DHDK UniBo, 2023</h4>
+        </div>
+    </footer>      
 
     <script>
 
@@ -669,8 +691,16 @@
         background-color: rgb(0,16,64);
     }
 
+    .text-dark-dark {
+        color: var(--bs-dark);
+    }
+
     .text-dark-blue {
         color: rgb(0,16,64);
+    }
+
+    .border-dark-blue {
+        border-color: rgb(0,16,64);;
     }
 
     a {
@@ -687,4 +717,6 @@
                 min-height: 95vh;
                 z-index: 0;
     }
+
+    
 </style>
