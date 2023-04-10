@@ -1,6 +1,4 @@
-
 @base <https://camelod.github.io/merlin/> .
-@prefix base: <https://apollo11moonlonding.github.io/> .
 
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/7.1.1/> .   
 @prefix dc: <http://purl.org/dc/terms/> .
