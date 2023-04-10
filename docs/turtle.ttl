@@ -205,7 +205,7 @@ owl:sameAs viaf:154757441 , wiki:Q10690, geonames:2653822 .
 <place/ArchStatBol> a crm:E53_Place ; 
 owl:sameAS <https://goo.gl/maps/H6DyJ5cgGSzCtBWH8> .
  
-#==== INSTITUTIONS ====
+#==== INSTITUTIONS =====
 
 #LIBRARY OF CONGRESS
 
