@@ -10,11 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
 </head>
-<body>
+<body class="bg-light">
     <header class="align-items-center">
-        <nav class="px-1 navbar navbar-expand-lg navbar-dark bg-dark-blue" style="position: fixed; z-index: 1; min-height: 10vh; width: 100%; height: 1fr;">
+        <nav class="px-1 navbar navbar-expand-lg navbar-dark bg-dark-blue" style="position: fixed; z-index: 100; height: 12vh; width: 100%;">
             <div class="container-fluid">
-              <a class="navbar-brand text-light" href="index.html" style="font-size: 2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">CameLOD</a>
+                <a class="navbar-brand text-light" href="index.html">
+                    <img href="index.html" class="text-light img-fluid card-img" src="./assets/camelod-logo.gif" style="height: 12vh; width: auto;" alt="CameLOD"/>
+                </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -72,7 +74,7 @@
     </header>
 
 
-    <main>
+    <main class="text-dark-blue" style="padding-top: 12vh;">
         <section id="knowledge-representation" class="d-flex flex-column justify-content-center align-items-center p-3">
             <h2>
                 Knowledge Representation
@@ -82,7 +84,7 @@
 
         
 
-        <section class="mx-5 mb-3 border pt-3" id="data-description">
+        <section id="data-description" class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h4>
                 Data description
             </h4>
@@ -613,7 +615,7 @@
             </div>
         </section>
 
-        <section id="uri-definition" class="mx-5 mb-3 border pt-3">
+        <section id="uri-definition" class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 Resource Identification
             </h3>
@@ -720,7 +722,7 @@
             </p>
         </section>
 
-        <section id="rdf-production" class="mx-5 mb-3 border pt-3">
+        <section id="rdf-production" class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 RDF production
             </h3>
@@ -734,14 +736,14 @@
             </div>
         </section>
 
-        <section id="rdf-visualization" class="mx-5 mb-3 border pt-3">
+        <section id="rdf-visualization" class="bg-white w-75 p-5 mx-auto mb-5 border">
             <h3>
                 RDF visualization
             </h3>
             <p>
                 After the serialization, the data expressed in Turtle serialisation can be finally visualised as a knowledge graphl. The network of entities and properties is automatically drawn by RDF Grapher.
             </p>
-            <div id="img-container1" class="container w-75 mb-3 px-5">
+            <div class="container w-75 mb-3 px-5">
                 <img src="assets/rdf-visualization.png" class="img-fluid"/>
             </div>
         </section>
@@ -754,7 +756,13 @@
         
     </main>
 
-    <footer>
+    <footer class="w-100 bg-dark-blue pb-3 pt-0 m-0">
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-evenly">
+            <a class="ps-4 pb-0 navbar-brand text-light" href="index.html" >
+                <img href="index.html" class="text-light img-fluid card-img" src="./assets/camelod-logo.gif" style="height: 25vh; width: auto;" alt="CameLOD"/>
+            </a>
+            <h5 class="text-light fw-lighter fst-italic">DHDK UniBo, 2023</h4>
+        </div>
     </footer>   
 
     <script>
@@ -793,8 +801,16 @@
         background-color: rgb(0,16,64);
     }
 
+    .text-dark-dark {
+        color: var(--bs-dark);
+    }
+
     .text-dark-blue {
         color: rgb(0,16,64);
+    }
+
+    .border-dark-blue {
+        border-color: rgb(0,16,64);;
     }
 
     a {
@@ -811,4 +827,5 @@
                 min-height: 95vh;
                 z-index: 0;
     }
+
 </style>
