@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="icon" href="./assets/camelod-logo.gif">
+    <link rel="stylesheet" href="./photoswipe/photoswipe.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script src="./photoswipe/photoswipe.umd.min.js"></script>
+    <script src="./photoswipe/photoswipe-lightbox.umd.min.js"></script>
 </head>
 <body class="bg-light">
     <header class="align-items-center">
@@ -960,8 +963,12 @@
             <p>
                 After the serialization, the data expressed in Turtle serialisation can be finally visualised as a knowledge graphl. The network of entities and properties is automatically drawn by RDF Grapher.
             </p>
-            <div class="container w-75 mb-3 px-5">
-                <img src="assets/rdf-visualization.png" class="img-fluid"/>
+            <div class="container w-75 mb-3 px-5" id="gallery--rdf-visualization">
+                <a href="assets/rdf-visualization.png" data-pswp-width="3000" 
+                data-pswp-height="2250" 
+                target="_blank">
+                    <img src="assets/rdf-visualization.png" class="img-fluid"/>
+                </a>
             </div>
         </section>
 
@@ -1039,6 +1046,17 @@
             document.getElementById('save-button-link').href = './assets/csv-files/'+idsOfTablesToNamesOfFiles[idOfTableToEnable]
         }
     </script>
+    <script type="text/javascript">
+
+        
+            new PhotoSwipeLightbox({
+                gallery: '#gallery--rdf-visualization',
+                children: 'a',
+                pswpModule: PhotoSwipe 
+            }).init();
+        
+
+      </script>
 </body>
 </html>
 
