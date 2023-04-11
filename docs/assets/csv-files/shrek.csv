@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+Animation Movie,schema:director,Raman Hui
+Animation Movie,schema:director,Chris Miller
+Animation Movie,schema:productionCompany ,Dream Works
+Animation Movie,schema:genre,Animation Movie
+Animation Movie,schema:inLanguage,English
+Animation Movie,schema:duration,93 minutes
+Animation Movie,schema:datePublished,2007
