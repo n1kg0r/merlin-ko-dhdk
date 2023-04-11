@@ -38,7 +38,8 @@ crm:P50_has_current_keeper <institution/Rijksmuseum> ;
 crm:P55_has_current_location <place/Rijksmuseum> ;
 crm:P43_has_dimension "55 mm × 54 mm"^^xsd:string ;
 crm:P62_depicts <character/Merlin> ;
-owl:isPartOf <related/Album> .
+owl:isPartOf <related/Album> ;
+owl:sameAs <http://hdl.handle.net/10934/RM0001.COLLECT.615178> .
 
 
 # SECOND ITEM: VIVIAN AND MERLIN
@@ -53,7 +54,9 @@ crm:P43_has_dimension "315 mm x 280 mm"^^xsd:string ;
 crm:P32_used_general_technique wiki:Q580807 ;
 crm:P108_was_produced_by <person/CameronJuliaMargaret> ;
 crm:P62_depicts <character/Merlin> ;
-crm:P62_depicts <character/Vivian> .
+crm:P62_depicts <character/Vivian> ;
+owl:sameAs <https://lccn.loc.gov/92521897>.
+
 
 #Third Item: Merlin and Arthur
 
@@ -90,7 +93,8 @@ crm:P50_has_current_keeper <institution/Rijksmuseum> ;
 crm:P55_has_current_location <place/Rijksmuseum> ;
 crm:P43_has_dimension "460mm × 315mm"^^xsd:string ;
 crm:P62_depicts <character/Merlin> ;
-crm:P1_is_identified_by "RP-P-2016-49"^^xsd:string .
+crm:P1_is_identified_by "RP-P-2016-49"^^xsd:string ; 
+owl:sameAs <http://hdl.handle.net/10934/RM0001.COLLECT.610005> .
 
 
 #==== PEOPLE ====
@@ -133,7 +137,7 @@ schema:deathDate "1879"^^xsd:gYear .
 owl:sameAs viaf:13622688 , wiki:Q3069617, db:Goscombe_John ;
 foaf:name "John, William Goscombe"^^xsd:string ;
 schema:birthPlace <place/Cardiff> ;
-schema:birthDate "1860-02-21"^^xsd:gYear ;
+schema:birthDate "21/02/1860"^^xsd:gYear ;
 schema:deathPlace <place/London> ;
 schema:deathDate "1952-12-15"^^xsd:gYear .
 
